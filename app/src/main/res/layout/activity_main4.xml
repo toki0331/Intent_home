@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.toki.intent_home.Main4Activity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/misao"
+        android:id="@+id/iv1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv1"
+        android:layout_toEndOf="@+id/iv1"
+        android:text="Misao.in"
+        android:textAllCaps="false"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/pink"/>
+
+    <EditText
+    android:id="@+id/et1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/iv1"
+        android:layout_below="@+id/tv2"
+        android:hint="ID"
+        android:inputType="text"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/iv1"
+        android:layout_below="@+id/et1"
+        android:hint="PassWord"
+        android:inputType="textPassword"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/et2"
+        android:layout_below="@+id/et2"
+        android:background="@color/pink"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn2"
+        android:layout_below="@+id/btn1"
+        android:text="For new parson"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/tv2"
+        android:layout_below="@+id/tv3"
+        android:background="@color/pink"
+        android:text="Create account"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>

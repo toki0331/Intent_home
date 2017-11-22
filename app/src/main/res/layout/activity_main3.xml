@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.toki.intent_home.Main3Activity">
+
+<ImageView
+    android:id="@+id/iv"
+    android:layout_marginTop="10dp"
+    android:layout_width="390dp"
+    android:layout_height="200dp"
+    android:src="@drawable/check"
+    />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv"
+        android:text="Name:"
+        android:textSize="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv3"
+        android:layout_below="@+id/tv3"
+        android:layout_marginLeft="50dp"
+        android:text="  ID  :"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/tv3"
+        android:text="toto"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv4"
+        android:text="Congratulation!! You are now a member of Misao.in "
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv1"
+        android:layout_alignStart="@+id/name"
+        android:text="toto"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:text="You will receve an e-mail from Misao.in"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Back to Log in Page"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:background="@color/pink"
+        android:layout_below="@id/tv2"
+        android:id="@+id/btn" />
+
+</RelativeLayout>
